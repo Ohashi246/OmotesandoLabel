@@ -104,3 +104,9 @@ a:hover {
 .photo-item img:hover {
     transform: scale(1.1);
 }
+
+.photo-item a {
+    display: block;
+    text-decoration: none;
+    height: 100%; /* Make the link fill the container */
+}
