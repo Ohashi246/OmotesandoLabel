@@ -3,10 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>プロギタリストのウェブサイト</title>
+    <title>大橋彰彦 | Akihiko Ohashi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>ギタリストのウェブサイト</h1>
-    <p>準備中</p>
+    <div class="container">
+        <h1><span id="typed-text"></span></h1>
+        <p class="title">音楽事務所「表参道レーベル」代表 / 音楽プロデューサー &amp; ギタリスト / 日本作曲家協会会員</p>
+
+        <div class="section">
+            <h2>プロフィール</h2>
+            <p>2006年にウクレレで演奏したオリジナル曲「Evergreen Day」がヤマハの音楽サイト「プレイヤーズ王国」で約55,000曲中1位となる。クロサワ楽器総本店で定期的にインストアライブを行うようになり、「大橋彰彦モデル」のウクレレ（Chihale製）が販売された。2014年、東京国際芸術協会から弦楽器部門で「新人賞」を授与される。ハワイでソロ・コンサートを行ったほか、サントリーホールやイギリス大使館でも演奏。現在は、ハード・ロックやヘビー・メタルのギタリストとして活動。</p>
+        </div>
+
+        <div class="section">
+            <h2>プライベート</h2>
+            <p>プライベート・ライフを好み、隠遁&amp;音信不通。ワインを飲んでいる。</p>
+        </div>
+
+        <div class="section links">
+            <h2>Link</h2>
+            <p><a href="https://www.instagram.com/akihiko_ohashi/" target="_blank" rel="noopener noreferrer">Instagram: @akihiko_ohashi</a></p>
+        </div>
+
+        <div class="section">
+            <h2>Photos</h2>
+            <div class="photo-grid">
+                <div class="photo-item"><img src="033.JPG" alt="Photo 1"></div>
+                <div class="photo-item"><img src="019.jpg" alt="Photo 2"></div>
+                <div class="photo-item"><img src="017.jpg" alt="Photo 3"></div>
+                <div class="photo-item"><img src="004.jpg" alt="Photo 4"></div>
+                <div class="photo-item"><img src="003a.JPG" alt="Photo 5"></div>
+                <div class="photo-item"><img src="032.JPG" alt="Photo 6"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var options = {
+            strings: ['大橋 彰彦'],
+            typeSpeed: 120,
+            showCursor: true,
+            cursorChar: '_',
+            loop: false
+        };
+        var typed = new Typed('#typed-text', options);
+    </script>
 </body>
 </html>
