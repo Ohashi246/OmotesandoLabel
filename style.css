@@ -1,12 +1,14 @@
 .caption-desc {
-    font-size: 0.95em;
+    font-size: 0.98em;
     color: #E0E0E0;
     margin-bottom: 2px;
+    font-weight: 400;
 }
 .caption-name {
-    font-size: 1.1em;
+    font-size: 1.12em;
     color: #00A896;
     font-weight: bold;
+    margin-top: 2px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato:wght@400;700&display=swap');
 
@@ -128,10 +130,14 @@ a:hover {
     text-align: center;
     color: #E0E0E0;
     font-size: 1em;
-    margin-top: 8px;
-    background: rgba(30,30,30,0.7);
+    margin-top: 0;
+    background: rgba(30,30,30,0.85);
     border-radius: 0 0 8px 8px;
-    padding: 6px 0 4px 0;
+    padding: 10px 0 8px 0;
+    position: relative;
+    z-index: 2;
+    min-height: 48px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 .popup {
