@@ -1,14 +1,15 @@
 .caption-desc {
-    font-size: 0.98em;
-    color: #E0E0E0;
-    margin-bottom: 2px;
-    font-weight: 400;
+    font-size: 1em;
+    color: #fff;
+    margin-bottom: 4px;
+    font-weight: 500;
 }
 .caption-name {
-    font-size: 1.12em;
+    font-size: 1.15em;
     color: #00A896;
     font-weight: bold;
     margin-top: 2px;
+    letter-spacing: 0.03em;
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato:wght@400;700&display=swap');
 
@@ -128,16 +129,17 @@ a:hover {
 
 .photo-caption {
     text-align: center;
-    color: #E0E0E0;
-    font-size: 1em;
+    color: #fff;
+    font-size: 1.1em;
     margin-top: 0;
-    background: rgba(30,30,30,0.85);
+    background: #222;
     border-radius: 0 0 8px 8px;
-    padding: 10px 0 8px 0;
+    padding: 12px 0 10px 0;
     position: relative;
     z-index: 2;
     min-height: 48px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    font-family: 'Montserrat', 'Lato', sans-serif;
 }
 
 .popup {
