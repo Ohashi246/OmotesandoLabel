@@ -40,13 +40,26 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 3em;
+    white-space: nowrap;
+    font-size: 2.2em;
     color: #FFFFFF;
     border-bottom: 3px solid #00A896; /* Accent color */
     padding-bottom: 15px;
     margin-bottom: 20px;
     text-align: center;
     min-height: 1.2em; /* Add min-height to prevent layout shift */
+    font-family: 'Montserrat', 'Lato', sans-serif;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.1em;
+        padding-bottom: 8px;
+        margin-bottom: 10px;
+        white-space: nowrap;
+        letter-spacing: 0.02em;
+    }
 }
 
 .typed-cursor {
