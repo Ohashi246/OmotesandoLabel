@@ -14,19 +14,19 @@
             <p style="font-size:1em; color:#E0E0E0; margin-top:16px; text-align:left;">■ 東日本大震災直後の被災地訪問</p>
         <div class="photo-grid" style="margin-top:24px;">
             <div class="photo-item">
-                <img src="Kesen.jpg" alt="Kesen" style="width:100%;max-width:220px;">
+                <a href="#" onclick="openPopup('Kesen.jpg'); return false;"><img src="Kesen.jpg" alt="Kesen" style="width:100%;max-width:220px;"></a>
                 <div class="photo-caption">
                     <div class="caption-desc">宮城県気仙沼市のショッピングモールなどでボランティア活動をしました。</div>
                 </div>
             </div>
             <div class="photo-item">
-                <img src="Ofunato.jpg" alt="Ofunato" style="width:100%;max-width:220px;">
+                <a href="#" onclick="openPopup('Ofunato.jpg'); return false;"><img src="Ofunato.jpg" alt="Ofunato" style="width:100%;max-width:220px;"></a>
                 <div class="photo-caption">
                     <div class="caption-desc">岩手県大船渡市の仮設住宅を訪問・演奏。</div>
                 </div>
             </div>
             <div class="photo-item">
-                <img src="Rikuzen.jpg" alt="Rikuzen" style="width:100%;max-width:220px;">
+                <a href="#" onclick="openPopup('Rikuzen.jpg'); return false;"><img src="Rikuzen.jpg" alt="Rikuzen" style="width:100%;max-width:220px;"></a>
                 <div class="photo-caption">
                     <div class="caption-desc">岩手県陸前高田市の仮設住宅を訪問・演奏。</div>
                 </div>
@@ -34,6 +34,32 @@
         </div>
         </div>
     </div>
+    <div id="popup" class="popup" style="display:none;">
+        <img id="popup-img" src="" alt="popup" onclick="closePopup()" style="max-width:90vw; max-height:90vh; border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,0.7); cursor:pointer;">
+    </div>
+    <script>
+    function openPopup(src) {
+        var popup = document.getElementById('popup');
+        var img = document.getElementById('popup-img');
+        img.src = src;
+        popup.style.display = 'flex';
+        popup.style.position = 'fixed';
+        popup.style.top = '0';
+        popup.style.left = '0';
+        popup.style.width = '100vw';
+        popup.style.height = '100vh';
+        popup.style.background = 'rgba(0,0,0,0.8)';
+        popup.style.justifyContent = 'center';
+        popup.style.alignItems = 'center';
+        popup.style.zIndex = '9999';
+    }
+    function closePopup() {
+        var popup = document.getElementById('popup');
+        var img = document.getElementById('popup-img');
+        img.src = '';
+        popup.style.display = 'none';
+    }
+    </script>
 </body>
 </html>
                     </div>
