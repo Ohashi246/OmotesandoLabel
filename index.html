@@ -56,5 +56,20 @@
             };
             var typed = new Typed('#typed-text', options);
         </script>
+            <!-- アクセスカウンター -->
+            <div style="text-align:center; margin-top:40px; color:#555; font-size:1.2em;">
+                <span id="visit-count"></span>
+            </div>
+            <script>
+                // localStorageを使った簡易アクセスカウンター
+                let count = localStorage.getItem('visitCount');
+                if (!count) {
+                    count = 1;
+                } else {
+                    count = parseInt(count) + 1;
+                }
+                localStorage.setItem('visitCount', count);
+                document.getElementById('visit-count').textContent = count;
+            </script>
     </div>
 </body>
