@@ -36,7 +36,39 @@
                             <div class="caption-desc">もっとも有名な英語専門誌『English Journal（2019年2月号）』に英語教師として紹介される。(2019)</div>
                         </div>
                     </div>
+                    <div class="photo-item">
+                        <a href="#" onclick="openPopup('OECD.jpg'); return false;"><img src="OECD.jpg" alt="OECD" style="width:100%;max-width:220px;"></a>
+                        <div class="photo-caption">
+                            <div class="caption-desc">文部科学省から国際調査「OECD国際教員指導環境調査」で指名される。(2018)</div>
+                        </div>
+                    </div>
             </div>
+        <div id="popup" class="popup" style="display:none;">
+            <img id="popup-img" src="" alt="popup" onclick="closePopup()" style="max-width:90vw; max-height:90vh; border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,0.7); cursor:pointer;">
+        </div>
+        <script>
+        function openPopup(src) {
+            var popup = document.getElementById('popup');
+            var img = document.getElementById('popup-img');
+            img.src = src;
+            popup.style.display = 'flex';
+            popup.style.position = 'fixed';
+            popup.style.top = '0';
+            popup.style.left = '0';
+            popup.style.width = '100vw';
+            popup.style.height = '100vh';
+            popup.style.background = 'rgba(0,0,0,0.8)';
+            popup.style.justifyContent = 'center';
+            popup.style.alignItems = 'center';
+            popup.style.zIndex = '9999';
+        }
+        function closePopup() {
+            var popup = document.getElementById('popup');
+            var img = document.getElementById('popup-img');
+            img.src = '';
+            popup.style.display = 'none';
+        }
+        </script>
         </div>
     </div>
 </body>
