@@ -45,17 +45,17 @@
                         <div class="caption-desc" style="font-size:1em; color:#fff; text-align:left; white-space:normal;">国際調査「OECD国際教育指導環境調査」で指名される。(2018)<br>※ １か国 200 校、１校につき教員 20 人と校長１人</div>
                     </div>
                 </div>
+            <div class="photo-row" style="display:flex; align-items:flex-start; gap:32px;">
+                <a href="#" onclick="openPopup('Hakuo.jpg'); return false;">
+                    <img src="Hakuo.jpg" alt="Hakuo" style="width:220px; height:220px; object-fit:cover; border-radius:8px; box-shadow:0 4px 16px rgba(0,0,0,0.12);">
+                </a>
+                <div class="photo-caption" style="max-width:400px;">
+                    <div class="caption-desc" style="font-size:1em; color:#fff; text-align:left; white-space:normal;">東京都立白鴎高校担当生徒が東大に9名合格。<br>また、ブータンのモティタン高校ジグメ・チョデン校長来日では、授業視察に選ばれる。(2016)</div>
+                </div>
+            </div>
             </div>
         <div id="popup" class="popup" style="display:none;">
-        <div class="photo-row" style="display:flex; align-items:flex-start; gap:32px;">
-            <a href="#" onclick="openPopup('Hakuo.jpg'); return false;">
-                <img src="Hakuo.jpg" alt="Hakuo" style="width:220px; height:220px; object-fit:cover; border-radius:8px; box-shadow:0 4px 16px rgba(0,0,0,0.12);">
-            </a>
-            <div class="photo-caption" style="max-width:400px;">
-                <div class="caption-desc" style="font-size:1em; color:#fff; text-align:left; white-space:normal;">東京都立白鴎高校担当生徒が東大に9名合格。<br>また、ブータンのモティタン高校ジグメ・チョデン校長来日では、授業視察に選ばれる。(2016)</div>
-            </div>
-        </div>
-            <img id="popup-img" src="" alt="popup" onclick="closePopup()" style="max-width:90vw; max-height:90vh; border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,0.7); cursor:pointer;">
+    <img id="popup-img" src="" alt="popup" style="max-width:90vw; max-height:90vh; border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,0.7); cursor:pointer;">
         </div>
     </div>
     <script>
@@ -73,12 +73,16 @@
         popup.style.justifyContent = 'center';
         popup.style.alignItems = 'center';
         popup.style.zIndex = '9999';
+        // 画像クリックで閉じるイベントを追加
+        img.onclick = closePopup;
     }
     function closePopup() {
         var popup = document.getElementById('popup');
         var img = document.getElementById('popup-img');
         img.src = '';
         popup.style.display = 'none';
+        // 画像クリックイベントを解除
+        img.onclick = null;
     }
     </script>
 </body>
