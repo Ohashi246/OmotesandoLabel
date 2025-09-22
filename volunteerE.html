@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Activities</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Social Contribution Activities</h1>
+        <div class="section">
+            <h2>Volunteer Activities</h2>
+            <p style="font-size:1em; color:#E0E0E0; margin-top:16px; text-align:left;">■ Visit to Disaster Areas after the Great East Japan Earthquake</p>
+        <div class="photo-grid" style="margin-top:24px;">
+            <div class="photo-item">
+                <a href="#" onclick="openPopup('Kesen.jpg'); return false;"><img src="Kesen.jpg" alt="Kesen" style="width:100%;max-width:220px;"></a>
+                <div class="photo-caption">
+                    <div class="caption-desc">Volunteered at shopping malls in Kesennuma City, Miyagi Prefecture.</div>
+                </div>
+            </div>
+            <div class="photo-item">
+                <a href="#" onclick="openPopup('Ofunato.jpg'); return false;"><img src="Ofunato.jpg" alt="Ofunato" style="width:100%;max-width:220px;"></a>
+                <div class="photo-caption">
+                    <div class="caption-desc">Visited and performed at temporary housing in Ofunato City, Iwate Prefecture.</div>
+                </div>
+            </div>
+            <div class="photo-item">
+                <a href="#" onclick="openPopup('Rikuzen.jpg'); return false;"><img src="Rikuzen.jpg" alt="Rikuzen" style="width:100%;max-width:220px;"></a>
+                <div class="photo-caption">
+                    <div class="caption-desc">Visited and performed at temporary housing in Rikuzentakata City, Iwate Prefecture.</div>
+                </div>
+            </div>
+    </div>
+    <p style="font-size:1em; color:#E0E0E0; margin-top:24px; text-align:left;">■ Donated Desks and Chairs to a Primary School in Bangladesh</p>
+    <div class="photo-grid" style="margin-top:16px;">
+        <div class="photo-item">
+            <a href="#" onclick="openPopup('Bang.jpg'); return false;"><img src="Bang.jpg" alt="Bangladesh" style="width:100%;max-width:220px;"></a>
+            <div class="photo-caption">
+                <div class="caption-desc">Received a thank-you email.</div>
+            </div>
+        </div>
+    </div>
+            <p style="font-size:1em; color:#E0E0E0; margin-top:24px; text-align:left;">■ Medical Service at Hospital during COVID-19 State of Emergency</p>
+        <div class="photo-grid" style="margin-top:16px;">
+            <div class="photo-item">
+                <a href="#" onclick="openPopup('Covid19.jpg'); return false;"><img src="Covid19.jpg" alt="Covid19" style="width:100%;max-width:220px; border-radius:0px; box-shadow:0 4px 16px rgba(0,0,0,0.2);"></a>
+                <div class="photo-caption">
+                    <div class="caption-desc" style="color:#E0E0E0; max-width:220px; margin:0 auto; word-break:break-word; text-align:left; white-space:normal;">Gained valuable experience working in a tense nurse station and examination room.</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    <p style="font-size:1em; color:#E0E0E0; margin-top:24px; text-align:left;">■ Registered for "Minato Tobacco Rule Declaration"</p>
+        <div class="photo-grid" style="margin-top:16px;">
+            <div class="photo-item">
+                <a href="#" onclick="openPopup('Minato.jpg'); return false;"><img src="Minato.jpg" alt="Minato" style="width:100%;max-width:220px;"></a>
+                <div class="photo-caption">
+                    <div class="caption-desc">Conducting patrols for walking smokers in Minami-Aoyama and Omotesando areas.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup" class="popup" style="display:none;">
+        <img id="popup-img" src="" alt="popup" onclick="closePopup()" style="max-width:90vw; max-height:90vh; border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,0.7); cursor:pointer;">
+    </div>
+    <script>
+    function openPopup(src) {
+        var popup = document.getElementById('popup');
+        var img = document.getElementById('popup-img');
+        img.src = src;
+        popup.style.display = 'flex';
+        popup.style.position = 'fixed';
+        popup.style.top = '0';
+        popup.style.left = '0';
+        popup.style.width = '100vw';
+        popup.style.height = '100vh';
+        popup.style.background = 'rgba(0,0,0,0.8)';
+        popup.style.justifyContent = 'center';
+        popup.style.alignItems = 'center';
+        popup.style.zIndex = '9999';
+    }
+    function closePopup() {
+        var popup = document.getElementById('popup');
+        var img = document.getElementById('popup-img');
+        img.src = '';
+        popup.style.display = 'none';
+    }
+    </script>
+</body>
+</html>
