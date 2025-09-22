@@ -75,8 +75,8 @@ h2 {
     font-size: 1.75em;
     color: #F5F5F5;
     margin-top: 50px;
-    border-left: 5px solid #00A896; /* Accent color */
-    padding-left: 15px;
+    /* border-left: 5px solid #00A896;  Accent color */
+    padding-left: 0;
 }
 
 p {
