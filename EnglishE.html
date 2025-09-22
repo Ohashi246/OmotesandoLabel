@@ -1,0 +1,132 @@
+                <!-- 2行目のOECD.jpgと紹介文を削除 -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英語教育に関する実績</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>英語教育に関する実績</h1>
+        <h2 style="margin-top:0;">English Education Achievements</h2>
+        <div class="section">
+            <div class="photo-grid" style="margin-top:24px; display: flex; gap: 24px;">
+                <div class="photo-item">
+                    <a href="#" onclick="openPopup('US.jpg'); return false;"><img src="US.jpg" alt="US" style="width:100%;max-width:220px;"></a>
+                    <div class="photo-caption">
+                        <div class="caption-desc">アメリカ大使館が選ぶ英語教師国内10人に選出される。アメリカ大使館から国務省に推薦され、アメリカ政府奨学金で英語教育セミナーの受講しながら、各国のアメリカ大使館に選ばれた英語教師のワークショップに参加。(2016-2017)</div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <a href="#" onclick="openPopup('NYU.jpg'); return false;"><img src="NYU.jpg" alt="NYU" style="width:100%;max-width:220px;"></a>
+                    <div class="photo-caption">
+                        <div class="caption-desc">英語教員国内40人選抜して開催するアメリカ大使館主催ニューヨーク大学英語教授法セミナーの審査に合格（中学高校英語教師126名受験）。アメリカ政府の奨学金で受講。(2017)</div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <a href="#" onclick="openPopup('EnJour.jpg'); return false;"><img src="EnJour.jpg" alt="English Journal" style="width:100%;max-width:220px;"></a>
+                    <div class="photo-caption">
+                        <div class="caption-desc">もっとも有名な英語専門誌『English Journal（2019年2月号）』に英語教師として紹介される。(2019)</div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <a href="#" onclick="openPopup('OECD.jpg'); return false;"><img src="OECD.jpg" alt="OECD" style="width:100%;max-width:220px;"></a>
+                    <div class="photo-caption">
+                        <div class="caption-desc">文部科学省から国際調査「OECD国際教員指導環境調査」で指名される。(2018)</div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <a href="#" onclick="openPopup('Hakuo.jpg'); return false;"><img src="Hakuo.jpg" alt="Hakuo" style="width:100%;max-width:220px;"></a>
+                    <div class="photo-caption">
+                        <div class="caption-desc">白鴎高校の担当生徒が東大に9名合格。また、ブータンのモティタン高校ジグメ・チョデン校長来日で、授業視察に選ばれる。(2016)</div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <a href="#" onclick="openPopup('Medi.jpg'); return false;"><img src="Medi.jpg" alt="Medi" style="width:100%;max-width:220px;"></a>
+                    <div class="photo-caption">
+                        <div class="caption-desc">東京大学医科学研究所に招かれ、海外招聘医師の外科学会レセプションでスピーチ。</div>
+                    </div>
+                </div>
+            </div>
+        <div id="popup" class="popup" style="display:none;">
+            <img id="popup-img" src="" alt="popup" onclick="closePopup()" style="max-width:90vw; max-height:90vh; border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,0.7); cursor:pointer;">
+        </div>
+        <script>
+        function openPopup(src) {
+            var popup = document.getElementById('popup');
+            var img = document.getElementById('popup-img');
+            img.src = src;
+            popup.style.display = 'flex';
+            popup.style.position = 'fixed';
+            popup.style.top = '0';
+            popup.style.left = '0';
+            popup.style.width = '100vw';
+            popup.style.height = '100vh';
+            popup.style.background = 'rgba(0,0,0,0.8)';
+            popup.style.justifyContent = 'center';
+            popup.style.alignItems = 'center';
+            popup.style.zIndex = '9999';
+        }
+        function closePopup() {
+            var popup = document.getElementById('popup');
+            var img = document.getElementById('popup-img');
+            img.src = '';
+            popup.style.display = 'none';
+        }
+        </script>
+        <!-- 新しいパート: English Specialists -->
+        <div class="section" style="margin-top:48px;">
+            <br><br>
+            <h2 style="margin-top:48px;">English Specialists</h2>
+            <div class="photo-grid" style="margin-top:24px; display: flex; gap: 24px;">
+                <div class="photo-item">
+                    <a href="#" onclick="openPopup('Tex.jpg'); return false;"><img src="Tex.jpg" alt="Tex" style="width:100%;max-width:220px;"></a>
+                    <div class="photo-caption" style="max-width:220px; width:100%;">
+                        <div class="caption-desc">日本一売れている英語の参考書『金のフレーズ』の著者</div>
+                        <div class="caption-name">TEX加藤氏</div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <a href="#" onclick="openPopup('Yasu.jpg'); return false;"><img src="Yasu.jpg" alt="Yasu" style="width:100%;max-width:220px;"></a>
+                    <div class="photo-caption" style="max-width:220px; width:100%;">
+                        <div class="caption-desc">東進ハイスクールのカリスマ講師</div>
+                        <div class="caption-name">安河内哲也氏</div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <a href="#" onclick="openPopup('MoTe.jpg'); return false;"><img src="MoTe.jpg" alt="MoTe" style="width:100%;max-width:220px;"></a>
+                    <div class="photo-caption" style="max-width:220px; width:100%;">
+                        <div class="caption-desc">英語の教育系ユーチューバー</div>
+                        <div class="caption-name">MoriTetsu氏</div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <a href="#" onclick="openPopup('Iseki.jpg'); return false;"><img src="Iseki.jpg" alt="Iseki" style="width:100%;max-width:220px;"></a>
+                    <div class="photo-caption" style="max-width:220px; width:100%;">
+                        <div class="caption-desc">ユーチューバーでもあり、武田塾のカリスマ英語講師</div>
+                        <div class="caption-name">井関真大氏</div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <a href="#" onclick="openPopup('ChriOni.jpg'); return false;"><img src="ChriOni.jpg" alt="ChriOni" style="width:100%;max-width:220px;"></a>
+                    <div class="photo-caption" style="max-width:220px; width:100%;">
+                        <div class="caption-desc">NHK「ハートで伝える英文法」や『1億人の英文法』の著者</div>
+                        <div class="caption-name">大西泰斗氏</div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <a href="#" onclick="openPopup('Iida.jpg'); return false;"><img src="Iida.jpg" alt="Iida" style="width:100%;max-width:220px;"></a>
+                    <div class="photo-caption" style="max-width:220px; width:100%;">
+                        <div class="caption-desc">駿台でおなじみのベストセラー『英作文基本300選』の著者</div>
+                        <div class="caption-name">飯田康夫氏</div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <a href="#" onclick="openPopup('Tono.jpg'); return false;"><img src="Tono.jpg" alt="Tono" style="width:100%;max-width:220px;"></a>
+                    <div class="photo-caption" style="max-width:220px; width:100%;">
+                        <div class="caption-desc">学校教材『コーパス4500』『チャンクで英単語』の著者</div>
+                        <div class="caption-name">投野由紀夫氏</div>
+                    </div>
+                </div>
