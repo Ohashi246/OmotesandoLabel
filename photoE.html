@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Photo Gallery</h1>
+    <div class="section">
+    <h2>People</h2>
+    </div>
+        <div class="photo-grid">
+                <div class="photo-item">
+                    <a href="#" onclick="openPopup('IA.jpg'); return false;"><img src="IA.jpg" alt="IA"></a>
+                    <div class="photo-caption">
+                         <div class="caption-desc">Journalist active in TV specials</div>
+                         <div class="caption-name">池上彰氏</div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <a href="#" onclick="openPopup('JV.jpg'); return false;"><img src="JV.jpg" alt="JV"></a>
+                    <div class="photo-caption">
+                         <div class="caption-desc">Founder of ZARA, global apparel leader</div>
+                         <div class="caption-name">ヘスス・ベガ氏</div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <a href="#" onclick="openPopup('MT.jpg'); return false;"><img src="MT.jpg" alt="MT"></a>
+                    <div class="photo-caption">
+                         <div class="caption-desc">Master's Dream brewer</div>
+                         <div class="caption-name">丸橋太一氏</div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <a href="#" onclick="openPopup('PS.jpg'); return false;"><img src="PS.jpg" alt="PS"></a>
+                    <div class="photo-caption">
+                         <div class="caption-desc">Legendary British fashion designer</div>
+                         <div class="caption-name">ポール・スミス氏</div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                <a href="#" onclick="openPopup('TS.jpg'); return false;"><img src="TS.jpg" alt="TS"></a>
+                <div class="photo-caption">
+                    <div class="caption-desc">Popular boxer on TikTok</div>
+                    <div class="caption-name">竹原慎二氏</div>
+                </div>
+                </div>
+                <div class="photo-item">
+                <a href="#" onclick="openPopup('SK.jpg'); return false;"><img src="SK.jpg" alt="SK"></a>
+                <div class="photo-caption">
+                    <div class="caption-desc">Great-grandson of Takamori Saigo, 4th generation direct descendant, entrepreneur</div>
+                    <div class="caption-name">西郷吉太郎氏</div>
+                </div>
+                </div>
+                <div class="photo-item">
+                    <a href="#" onclick="openPopup('KH.jpg'); return false;"><img src="KH.jpg" alt="KH"></a>
+                    <div class="photo-caption">
+                         <div class="caption-desc">Singer of legendary folk group "Rokumonsen"</div>
+                         <div class="caption-name">小室等氏</div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                <a href="#" onclick="openPopup('MM.jpg'); return false;"><img src="MM.jpg" alt="MM"></a>
+                <div class="photo-caption">
+                         <div class="caption-desc">Radio show personality and co-host</div>
+                    <div class="caption-name">マイク眞木氏</div>
+                </div>
+                </div>
+                    <div class="photo-item">
+                        <a href="#" onclick="openPopup('GT.jpg'); return false;"><img src="GT.jpg" alt="GT"></a>
+                        <div class="photo-caption">
+                            <div class="caption-desc">Composer of hit song "Amagi-goe" and former president of Japan Composers Association</div>
+                            <div class="caption-name">弦哲也氏</div>
+                        </div>
+                        </div>
+                        <div class="photo-item">
+                            <a href="#" onclick="openPopup('TK.jpg'); return false;"><img src="TK.jpg" alt="TK"></a>
+                            <div class="photo-caption">
+                                <div class="caption-desc">Grandson of Massan, Mr. Taketsuru of Taketsuru Whisky</div>
+                                <div class="caption-name">竹鶴孝太郎氏</div>
+                            </div>
+                    </div>
+        </div>
+
+        <div class="section">
+            <h2>Media</h2>
+        </div>
+        <div class="photo-grid">
+            <div class="photo-item">
+                <a href="#" onclick="openPopup('TeleTo.jpg'); return false;"><img src="TeleTo.jpg" alt="TeleTo"></a>
+                <div class="photo-caption">
+                    <div class="caption-desc">Featured on TV Tokyo special program</div>
+                </div>
+            </div>
+            <div class="photo-item">
+                <a href="#" onclick="openPopup('MechaIke.jpg'); return false;"><img src="MechaIke.jpg" alt="MechaIke"></a>
+                <div class="photo-caption">
+                    <div class="caption-desc">Appeared on Mecha-Ike</div>
+                </div>
+            </div>
+            <div class="photo-item">
+                <a href="#" onclick="openPopup('Vik.jpg'); return false;"><img src="Vik.jpg" alt="Vik"></a>
+                <div class="photo-caption">
+                    <div class="caption-desc">Interview aired on daytime information program</div>
+                </div>
+            </div>
+            <div class="photo-item">
+                <a href="#" onclick="openPopup('Ameba.jpg'); return false;"><img src="Ameba.jpg" alt="Ameba"></a>
+                <div class="photo-caption">
+                    <div class="caption-desc">Visited CyberAgent headquarters for blog interview</div>
+                </div>
+            </div>
+            <div class="photo-item">
+                <a href="#" onclick="openPopup('DasTrau.jpg'); return false;"><img src="DasTrau.jpg" alt="DasTrau"></a>
+                <div class="photo-caption">
+                    <div class="caption-desc">Appeared on "Das Traumaschiff" and talked with German star Harald Schmidt!</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup" class="popup" style="display:none;">
+            <img id="popup-img" src="" alt="popup" onclick="closePopup()" style="max-width:90vw; max-height:90vh; border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,0.7); cursor:pointer;">
+        </div>
+        <script>
+        function openPopup(src) {
+            var popup = document.getElementById('popup');
+            var img = document.getElementById('popup-img');
+            img.src = src;
+            popup.style.display = 'flex';
+            popup.style.position = 'fixed';
+            popup.style.top = '0';
+            popup.style.left = '0';
+            popup.style.width = '100vw';
+            popup.style.height = '100vh';
+            popup.style.background = 'rgba(0,0,0,0.8)';
+            popup.style.justifyContent = 'center';
+            popup.style.alignItems = 'center';
+            popup.style.zIndex = '9999';
+        }
+        function closePopup() {
+            var popup = document.getElementById('popup');
+            var img = document.getElementById('popup-img');
+            img.src = '';
+            popup.style.display = 'none';
+        }
+        </script>
+</body>
+</html>
