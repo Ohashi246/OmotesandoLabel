@@ -25,7 +25,23 @@
 
         <div class="section">
             <h2>Profile</h2>
-          <p>2006年にウクレレで演奏したオリジナル曲「Evergreen Day」がヤマハの音楽サイト「プレイヤーズ王国」で約55,000曲中1位となる。クロサワ楽器総本店で定期的にインストアライブを行うようになり、「大橋彰彦モデル」のウクレレ（Chihale製）が販売された。2014年、東京国際芸術協会から弦楽器部門で「新人賞」を授与される。ハワイでソロ・コンサートを行ったほか、サントリーホールやイギリス大使館でも演奏。現在は、クラブ・ミュージックの制作だけでなく、ハード・ロック/ヘビー・メタルのギタリストとしても活動中。<br>明海大学外国語学部・中央大学法学部卒業。現在は改正民法の学びなおしのため、慶應義塾大学法学部在籍。</p>
+          <p>2006年にウクレレで演奏したオリジナル曲「<a href="#" onclick="openEDPopup(); return false;">Evergreen Day</a>」がヤマハの音楽サイト「プレイヤーズ王国」で約55,000曲中1位となる。クロサワ楽器総本店で定期的にインストアライブを行うようになり、「大橋彰彦モデル」のウクレレ（Chihale製）が販売された。2014年、東京国際芸術協会から弦楽器部門で「新人賞」を授与される。ハワイでソロ・コンサートを行ったほか、サントリーホールやイギリス大使館でも演奏。現在は、クラブ・ミュージックの制作だけでなく、ハード・ロック/ヘビー・メタルのギタリストとしても活動中。<br>明海大学外国語学部・中央大学法学部卒業。現在は改正民法の学びなおしのため、慶應義塾大学法学部在籍。</p>
+</div>
+<!-- Evergreen Day ポップアップ -->
+<div id="ed-popup" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); z-index:9999; justify-content:center; align-items:center;">
+    <div style="background:#fff; border-radius:10px; max-width:800px; width:90vw; max-height:90vh; overflow:auto; position:relative; padding:32px;">
+        <button onclick="closeEDPopup()" style="position:absolute; top:12px; right:12px; font-size:1.5em; background:none; border:none; cursor:pointer;">&times;</button>
+        <iframe src="ED.html" style="width:100%; height:70vh; border:none; border-radius:8px;"></iframe>
+    </div>
+</div>
+<script>
+function openEDPopup() {
+    document.getElementById('ed-popup').style.display = 'flex';
+}
+function closeEDPopup() {
+    document.getElementById('ed-popup').style.display = 'none';
+}
+</script>
         </div>
 
         <div class="section">
